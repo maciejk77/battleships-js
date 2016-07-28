@@ -1,0 +1,36 @@
+body {
+    margin: 60px auto;
+    width: 50%;
+    max-width: 900px;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+p, button, input {
+  font-size: 1.5em;
+  line-height: 1.4em;
+  color: #333;
+  margin-bottom: 1em;
+}
+
+div {
+  color: gray;
+  text-align: center;
+}
+
+#gameboard {
+  position: relative;
+  margin: 0 auto 2em auto;
+  width: 500px;
+  height: 500px;
+}
+
+#gameboard div {
+  position: absolute;
+  border: 1px solid #ddd;
+  width: 50px;
+  height: 50px;
+}
