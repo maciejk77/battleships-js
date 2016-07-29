@@ -4,7 +4,7 @@ The purpose of this exercise is to create a game engine in Javascript and UI.
 
 ##Instruction
 
-- addShip(length, orientation, xCoordinate, yCoordinate)
+- JS console method to **addShip(length, orientation, xCoordinate, yCoordinate)** 
 - hit by clicking on individual cells (event handling of click and changing CSS styles)
 
 ###To be done
