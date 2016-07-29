@@ -5,8 +5,8 @@ The purpose of this exercise is to create a game engine in Javascript and UI.
 ##Instruction
 
 # JS console methods
-- **addShip(length, orientation, xCoordinate, yCoordinate)** (add ship to the left/right/up/down at given XY and length) 
-- **hit(xyOfTheCell)** (add hit to the board at given XY)
+- **addShip(length, orientation, xCoordinate, yCoordinate)** add ship to left/right/up/down at given XY and length
+- **hit(xyOfTheCell)** add hit to the board at given XY e.g. 'J10'
 
 # JS event handling
 - fire(e) method handles clicks received at any given cell, changes cell colour to red when hit, JS hit method listens for a click, when received this method takes over and continue as if it was a click on the grid
