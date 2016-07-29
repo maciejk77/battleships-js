@@ -2,8 +2,6 @@
 
 The purpose of this exercise is to create a game engine in Javascript and UI.
 
-#Instruction
-
 ## JS console methods
 - **addShip(length, orientation, xCoordinate, yCoordinate)** add ship to left/right/up/down at given XY and length
 - **hit(xyOfTheCell)** add hit to the board at given XY e.g. 'J10'
