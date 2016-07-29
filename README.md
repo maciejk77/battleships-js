@@ -16,4 +16,4 @@ The purpose of this exercise is to create a game engine in Javascript and UI.
 
 ####Preview
 
-![battleships-js screenshot](https://github.com/maciejk77/)
+![battleships-js screenshot](https://raw.githubusercontent.com/maciejk77/battleships-js/master/img/screenshot.png)
