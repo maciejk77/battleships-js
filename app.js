@@ -59,37 +59,50 @@ function getUIGrid() {
 
 }  
 
+// function getObj(length, orientation, xCoord, yCoord, xyArr) {
+//   return ship = {
+//     length: length,
+//     orientation: orientation,
+//     xCoord: xCoord,
+//     yCoord: yCoord,
+//     xyArr: xyArr,
+//     hits: 0
+//   };
+// }
+
+// var xyArr = [];
 function addShip(length, orientation, xCoord, yCoord) {
 
   for(i = 0; i < length; i++) {
-    var tempArr = [];
     
     if(board[xCoord][yCoord] === 0) {
       board[xCoord][yCoord] = 1;
-      
+      // xyArr.push(xCoord, yCoord);
+
       switch(orientation) {
         case 'right':
-          console.log('right');
           xCoord++;
           break;
         case 'left':
-          console.log('left');
           xCoord--;
           break;
         case 'up':
-          console.log('up');
           yCoord--;
           break;
         case 'down':
-          console.log('down');
           yCoord++;
           break;  
       } 
-    
-    } 
-  
+      // xyArr.push(xCoord, yCoord);
+    }
   }
+// boardObj.ships.push( getObj(length, orientation, xCoord, yCoord, xyArr) );
+return true;
+}
 
+function hit(x,y) {
+  // method to simulate click from the console instead of click on the grid, using current click event handler
+  document.getElementById('s' + y + x).click();
   return true;
 }
 
