@@ -15,6 +15,7 @@ The purpose of this exercise is to create a game engine in Javascript and UI.
 - random ship placements and hits (AI player vs computer)
 - storing number of hits per ship and alert when sunken
 - method to return a status of each ship, number of hits etc.
+- delete/decrease number of cells after each hit until Game Over message appears
 
 ####Preview
 
