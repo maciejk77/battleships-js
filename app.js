@@ -7,6 +7,9 @@ var shipsSquares = 17;
 // Carrier 5 hits | Battleship 4 hits | Destroyer 3 hits | Submarine 3 hits | Patrol Boat 2 hits
 // Total - 17 hits required to sunk all
 
+// an array of letters to add to Y coordinates and to each square of the grid
+const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
+
 // counter to increment up to 17, sum of ship squares, all sunk
 var hitsCounter = 0;
 
@@ -35,9 +38,6 @@ function getUIGrid() {
 
   for (i = 0; i < yLength; i++) {
     for (j = 0; j < xLength; j++) {
-
-      // an array of letters to add to Y coordinates and to each square of the grid
-      var letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
 
       // create div for each box and set the size
       var square = document.createElement("div");
@@ -100,9 +100,12 @@ function addShip(length, orientation, xCoord, yCoord) {
 return true;
 }
 
-function hit(x,y) {
+function hit(xy) {
   // method to simulate click from the console instead of click on the grid, using current click event handler
-  document.getElementById('s' + y + x).click();
+  var x = xy.substring(0,1).toUpperCase();
+  var y = xy.substring(1,3) - 1;
+  x = letters.indexOf(x);
+  document.getElementById('s' + x + y).click();
   return true;
 }
 
