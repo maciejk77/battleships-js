@@ -1,4 +1,4 @@
-#Battleships in Javascript
+# Battleships in Javascript
 
 The purpose of this exercise is to create a game engine in Javascript and UI.
 
@@ -9,7 +9,7 @@ The purpose of this exercise is to create a game engine in Javascript and UI.
 ## JS event handling
 - **fire(e)** method handles clicks received at any given cell, changes cell colour to red when hit, JS hit method passes a click, when received event handler takes over and continue as if it was a click on the grid
 
-###To be done
+### To be done
 
 - error handling for off the grid ship placement
 - random ship placements and hits (AI player vs computer)
@@ -17,6 +17,6 @@ The purpose of this exercise is to create a game engine in Javascript and UI.
 - method to return a status of each ship, number of hits etc.
 - delete/decrease number of cells after each hit until Game Over message appears
 
-####Preview
+#### Preview
 
 ![battleships-js screenshot](https://raw.githubusercontent.com/maciejk77/battleships-js/master/img/screenshot.png)
